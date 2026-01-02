@@ -1,0 +1,52 @@
+name: 🐞 Bug Report
+description: Report a broken feature or crash in Momentum
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks for reporting a bug!** 
+        Please verify you are on the latest version of Momentum before submitting.
+  
+  - type: input
+    id: version
+    attributes:
+      label: Momentum Version
+      description: e.g. v0.4.1 or "Latest Release"
+      placeholder: v0.x.x
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tier
+    attributes:
+      label: License Tier
+      description: Which version of Momentum are you using?
+      options:
+        - Starter
+        - Pro
+        - Enterprise
+        - Government
+        - Demo
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Detailed steps to reproduce the issue.
+      placeholder: |
+        1. I opened the Payload Adapter template
+        2. I clicked "Run Verification"
+        3. Momentum crashed with error code 500
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs
+      description: Paste any relevant error logs or stack traces here.
+      render: shell
