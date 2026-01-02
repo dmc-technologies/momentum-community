@@ -1,6 +1,6 @@
 ![Momentum Logo](docs/images/Momentum_Long_transparent.png)
 
-# Welcome to the Momentum Community Hub
+# Welcome to the Momentum Community
 
 **This is the central place for Momentum users to give feedback, report bugs, and chat.**
 *Note: The source code for Momentum is private. This repository is for community interaction only.*
