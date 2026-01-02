@@ -5,7 +5,7 @@
 
 ## 🚀 How to participate
 - **Have a question?** Start a [Discussion in Q&A](https://github.com/dmc-technologies/momentum-community/discussions/categories/q-a).
-- **Found a bug?** File a [Bug Report Issue](https://github.com/YOUR_ORG/Momentum-Community/issues/new/choose).
+- **Found a bug?** File a [Bug Report Issue](https://github.com/dmc-technologies/momentum-community/issues/new/choose).
 - **Have a feature idea?** Post it in [Ideas](https://github.com/dmc-technologies/momentum-community/discussions/categories/ideas).
 
 ## 🔗 Useful Links
