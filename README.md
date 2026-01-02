@@ -15,5 +15,9 @@
 - [momentum](https://github.com/dan-mueller-consulting/momentum)
 - [design-repository](https://github.com/dmc-technologies/design-repository)
 
+## Demos
+- See [DMC Technologies](https://www.youtube.com/channel/UChNTNk3IgS6Y6KeNHzsGosw) on YouTube for the latest updates.
+- [Physics Based Reasoning - Strut Demo](https://youtu.be/qIEYWjeu1GU)
+
 ## Rules
 Don't be a jerk.
