@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a Question
+    url: https://github.com/YOUR_USERNAME/Momentum-Community/discussions/categories/q-a
+    about: Do not file bugs for questions. Please ask the community here.
+  - name: 💡 Feature Request
+    url: https://github.com/YOUR_USERNAME/Momentum-Community/discussions/categories/ideas
+    about: Have an idea? Suggest it in our Discussions board.
