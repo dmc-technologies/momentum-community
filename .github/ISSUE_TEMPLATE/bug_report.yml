@@ -50,3 +50,15 @@ body:
       label: Error Logs
       description: Paste any relevant error logs or stack traces here.
       render: shell
+
+  - type: textarea
+    id: uploads
+    attributes:
+      label: Screenshots & Files
+      description: |
+        Drag and drop images, videos, or log files here to attach them.
+        (Supported: .png, .jpg, .mov, .mp4, .docx, .pdf, .txt)
+        Zip the file if it fails to upload.
+      placeholder: Drag & drop files here...
+    validations:
+      required: false
