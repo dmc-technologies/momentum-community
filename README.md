@@ -4,9 +4,9 @@
 *Note: The source code for Momentum is private. This repository is for community interaction only.*
 
 ## 🚀 How to participate
-- **Have a question?** Start a [Discussion in Q&A](https://github.com/YOUR_ORG/Momentum-Community/discussions/categories/q-a).
+- **Have a question?** Start a [Discussion in Q&A](https://github.com/dmc-technologies/momentum-community/discussions/categories/q-a).
 - **Found a bug?** File a [Bug Report Issue](https://github.com/YOUR_ORG/Momentum-Community/issues/new/choose).
-- **Have a feature idea?** Post it in [Ideas](https://github.com/YOUR_ORG/Momentum-Community/discussions/categories/ideas) and vote on others.
+- **Have a feature idea?** Post it in [Ideas](https://github.com/dmc-technologies/momentum-community/discussions/categories/ideas).
 
 ## 🔗 Useful Links
 - [Official Website](http://dmc-technologies.com/)
