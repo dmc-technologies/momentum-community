@@ -19,6 +19,7 @@
 ## Useful Links
 - [Official Website](http://dmc-technologies.com/)
 - [momentum](https://github.com/dan-mueller-consulting/momentum)
+- [momentum docs](https://docs.dmc-technologies.com/momentum/)
 - [design-repository](https://github.com/dmc-technologies/design-repository)
 
 ## Demos
