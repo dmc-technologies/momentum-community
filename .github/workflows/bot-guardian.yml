@@ -1,0 +1,28 @@
+name: Bot Action Guardian
+on:
+  pull_request:
+    types: [closed]
+  issues:
+    types: [closed]
+permissions:
+  pull-requests: write
+  issues: write
+jobs:
+  guard-pr-close:
+    if: github.event_name == 'pull_request' && github.event.pull_request.merged == false && contains(github.actor, '[bot]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reopen PR
+        env:
+          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr reopen \${{ github.event.pull_request.number }} -R \${{ github.repository }} -c \"Auto-reopened: bots cannot close PRs. Only @dan-s-mueller can close PRs.\"
+  guard-issue-close:
+    if: github.event_name == 'issues' && contains(github.actor, '[bot]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reopen issue
+        env:
+          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue reopen \${{ github.event.issue.number }} -R \${{ github.repository }} -c \"Auto-reopened: bots cannot close issues. Only @dan-s-mueller can close issues.\"
