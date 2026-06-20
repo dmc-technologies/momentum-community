@@ -12,7 +12,7 @@ def test_review_gate_delegates_to_agent_ops_reusable_workflow() -> None:
     workflow = WORKFLOW_PATH.read_text()
 
     assert "types: [opened, synchronize, reopened, labeled]" in workflow
-    assert "uses: dmc-technologies/agent-ops/.github/workflows/review-gate-reusable.yml@main" in workflow
+    assert "uses: dmc-technologies/agent-ops-community/.github/workflows/review-gate-reusable.yml@main" in workflow
     assert "secrets: inherit" in workflow
     assert "head_repo: ${{ github.event.pull_request.head.repo.full_name }}" in workflow
     assert "head_sha: ${{ github.event.pull_request.head.sha }}" in workflow
