@@ -2,7 +2,7 @@ name: Review Gate Dispatcher
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, labeled]
+    types: [labeled]
   workflow_dispatch:
     inputs:
       pr_number:
@@ -15,16 +15,22 @@ on:
         type: choice
         options:
           - agent-review
+      scope:
+        description: "Review scope"
+        required: true
+        default: auto
+        type: choice
+        options:
+          - auto
+          - lite
+          - critical
 
 jobs:
   agent-review-label:
     name: Review Gate
     if: >-
       github.event_name == 'pull_request' &&
-      (
-        (github.event.action == 'labeled' && github.event.label.name == 'ai review') ||
-        github.event.action != 'labeled'
-      )
+      github.event.label.name == 'ai review'
     permissions:
       contents: read
       issues: write
@@ -37,7 +43,7 @@ jobs:
       head_repo: ${{ github.event.pull_request.head.repo.full_name }}
       head_sha: ${{ github.event.pull_request.head.sha }}
       base_ref: ${{ github.event.pull_request.base.ref }}
-      codex_model: ${{ vars.REVIEW_GATE_CODEX_MODEL || '' }}
+      scope: ${{ contains(github.event.pull_request.labels.*.name, 'critical') && 'critical' || 'auto' }}
     secrets: inherit
 
   resolve-dispatch-pr:
@@ -83,5 +89,5 @@ jobs:
       head_repo: ${{ needs.resolve-dispatch-pr.outputs.head_repo }}
       head_sha: ${{ needs.resolve-dispatch-pr.outputs.head_sha }}
       base_ref: ${{ needs.resolve-dispatch-pr.outputs.base_ref }}
-      codex_model: ${{ vars.REVIEW_GATE_CODEX_MODEL || '' }}
+      scope: ${{ github.event.inputs.scope }}
     secrets: inherit
