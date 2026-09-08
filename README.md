@@ -1,30 +1,33 @@
-![Momentum Logo](docs/images/Momentum_Long_transparent.png)
+![Momentum logo](docs/images/Momentum_Long_transparent.png)
 
-# Welcome to the Momentum Community
+# Momentum Community
 
-**This is the central place for Momentum users to give feedback, report bugs, and chat.**
-*Note: The source code for Momentum is private. This repository is for community interaction only.*
+Use this public repository to ask questions, report bugs, and suggest improvements to Momentum. It contains community guidance and issue forms. Momentum's product source is maintained separately and requires access.
 
-## Subscribe for updates
-- Click the Watch button at the top right of this page.
-- If you only want discussion updates:
-  - Select Custom.
-  - Check Discussions.
+## Choose where to contribute
 
-## How to participate
-- **Have a question?** Start a [Discussion in Q&A](https://github.com/dmc-technologies/momentum-community/discussions/categories/q-a).
-- **Found a bug?** File a [Bug Report Issue](https://github.com/dmc-technologies/momentum-community/issues/new/choose).
-- **Have a feature idea?** Post it in [Ideas](https://github.com/dmc-technologies/momentum-community/discussions/categories/ideas).
+| What you want to do | Where to start | What to include |
+| --- | --- | --- |
+| Ask how something works | [Q&A](https://github.com/dmc-technologies/momentum-community/discussions/categories/q-a) | What you tried, what you expected, and the part you need help understanding |
+| Report behavior that appears incorrect | [Bug report form](https://github.com/dmc-technologies/momentum-community/issues/new?template=bug_report.yml) | Your version, steps to reproduce, expected behavior, and observed behavior |
+| Suggest a change | [Ideas](https://github.com/dmc-technologies/momentum-community/discussions/categories/ideas) | The engineering task, what prevents you from completing it, and the result you need |
+| Share an example or ask a broader question | [Discussions](https://github.com/dmc-technologies/momentum-community/discussions) | Enough context for another participant to understand and respond |
 
-## Useful Links
-- [Official Website](http://dmc-technologies.com/)
-- [momentum](https://github.com/dan-mueller-consulting/momentum)
-- [momentum docs](https://docs.dmc-technologies.com/momentum/)
-- [design-repository](https://github.com/dmc-technologies/design-repository)
+Search existing issues and discussions before opening another. When a report already covers your problem, add the new observation there. Keep discussion respectful and focused on the work.
 
-## Demos
-- See [DMC Technologies](https://www.youtube.com/channel/UChNTNk3IgS6Y6KeNHzsGosw) on YouTube for the latest updates.
-- [Physics Based Reasoning - Strut Demo](https://youtu.be/qIEYWjeu1GU)
+This repository is public. Remove credentials, personal information, and customer or proprietary material from logs, screenshots, and attachments before posting. Use an illustrative example when the original material cannot be shared publicly.
 
-## Rules
-Don't be a jerk.
+## Follow updates
+
+Use GitHub's **Watch** control to choose notifications. Select **Custom**, then **Discussions**, if you want discussion updates. [Announcements](https://github.com/dmc-technologies/momentum-community/discussions/categories/announcements) contains the community's announcement category.
+
+## Find product information
+
+- [DMC Technologies](https://dmc-technologies.com/) is the company website.
+- [Momentum source repository](https://github.com/dmc-technologies/momentum) is private; an inaccessible page does not mean this public community repository is broken.
+- [Momentum documentation](https://docs.dmc-technologies.com/momentum/) requires authentication. Use Q&A for questions you can discuss publicly.
+- [DMC Technologies videos](https://www.youtube.com/channel/UChNTNk3IgS6Y6KeNHzsGosw) includes demonstrations. The [Strut Demo video](https://youtu.be/qIEYWjeu1GU) is a recorded example, not a statement of current product availability.
+
+## Improve this repository
+
+Changes here should improve community navigation and participation. Keep product implementation and service operation instructions with their owning repositories. [Agent instructions](AGENTS.md) define the same boundary for automated contributions.
