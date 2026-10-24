@@ -1,0 +1,4 @@
+# GitHub logins that belong to agents, one per line. On a critical pull request
+# an approving review from one of these does not count as a person. The target
+# branch's copy governs; dmc-agents is built in.
+dmc-agents
