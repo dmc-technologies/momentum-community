@@ -1,0 +1,21 @@
+# The organization ruleset requires a check named CI on every repository. This
+# repository holds community guidance, so CI checks that every local link and
+# image in the Markdown resolves. scripts/check_links.py is the check.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  CI:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Every local Markdown link resolves
+        run: python3 scripts/check_links.py
