@@ -1,0 +1,23 @@
+inheritance: true
+knowledge_base:
+  linked_repositories:
+    - repository: dmc-technologies/momentum
+      instructions: "Momentum product: design workflow, recorded facts, operations, and the Structures MCP client. Report route, schema, unit, record-format, or version drift."
+    - repository: dmc-technologies/momentum-utilities
+      instructions: "Parsing, queue, hosted execution, and deployment code Momentum depends on. Report contract and artifact-format drift."
+    - repository: dmc-technologies/momentum-dev-ops
+      instructions: "Deployment, runners, and workflow automation for Momentum. Report deployment-contract and credential-boundary drift."
+    - repository: dmc-technologies/structures-utilities
+      instructions: "Structures MCP server and solver catalog that Momentum pins and calls. Report route, schema, unit, or version drift."
+    - repository: dmc-technologies/momentum-documents
+      instructions: "Momentum documents, demo videos, and published documentation. Report drift from product behavior."
+    - repository: dmc-technologies/momentum-divergent
+      instructions: "Divergent design exploration built on Momentum. Report API drift against Momentum."
+    - repository: dmc-technologies/agent-ops
+      instructions: "Canonical policy, skills, and the shared PR proof check. Report conflicts with the global policy."
+    - repository: dmc-technologies/coderabbit
+      instructions: "Central CodeRabbit configuration every repository inherits. Report overlay keys the central policy forbids."
+    - repository: dmc-technologies/llm-ops
+      instructions: "Local LLM profiles and model operations. Report model or profile contract drift."
+    - repository: dmc-technologies/qm-ops
+      instructions: "Quality management operations. Report drift against Momentum record contracts."
