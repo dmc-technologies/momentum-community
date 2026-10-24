@@ -13,6 +13,6 @@ Do not infer supported product features, release status, or service availability
 - [README.md](README.md) routes community participants.
 - [.github/ISSUE_TEMPLATE/bug_report.yml](.github/ISSUE_TEMPLATE/bug_report.yml) owns the bug report fields.
 - [.github/ISSUE_TEMPLATE/config.yml](.github/ISSUE_TEMPLATE/config.yml) owns the issue chooser's contact links and whether blank issues are allowed.
-- [.github/workflows/](.github/workflows/) and [tests/test_review_gate.py](tests/test_review_gate.py) contain existing review automation and its checks. A documentation change does not authorize changing review policy.
+- [.github/workflows/ci.yml](.github/workflows/ci.yml) runs [scripts/check_links.py](scripts/check_links.py), which refuses a Markdown link whose local destination does not exist. CodeRabbit reviews every pull request under the DMC central configuration. A documentation change does not authorize changing review policy.
 
 Before changing a link, verify its destination and access requirement. Before changing a form, inspect its field identifiers, required fields, and contact routes. For documentation-only work, inspect the rendered Markdown, check local destinations, and record which external links were actually checked. Automation tests are separate evidence; they do not prove that the guidance is understandable.
